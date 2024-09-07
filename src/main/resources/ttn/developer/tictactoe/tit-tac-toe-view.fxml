@@ -30,15 +30,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="button1" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="151.0" prefWidth="167.0" />
-            <Button fx:id="button2" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="173.0" prefWidth="160.0" GridPane.columnIndex="1" />
-            <Button fx:id="button3" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="155.0" prefWidth="141.0" GridPane.columnIndex="2" />
-            <Button fx:id="button4" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="158.0" prefWidth="155.0" GridPane.rowIndex="1" />
-            <Button fx:id="button5" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="161.0" prefWidth="208.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="button6" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="158.0" prefWidth="145.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="button7" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="157.0" prefWidth="203.0" GridPane.rowIndex="2" />
-            <Button fx:id="button8" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="154.0" prefWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="button9" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="167.0" prefWidth="208.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="button1" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="151.0" prefWidth="167.0" style="-fx-border-color: #000; -fx-border-width: 0 2px 2px 0; -fx-background-color: #fffeee;" />
+            <Button fx:id="button2" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="173.0" prefWidth="160.0" style="-fx-background-color: #fffeee; -fx-border-color: #000; -fx-border-width: 0 0 2px;" GridPane.columnIndex="1" />
+            <Button fx:id="button3" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="155.0" prefWidth="141.0" style="-fx-border-color: #000; -fx-border-width: 0 0 2px 2px; -fx-background-color: #fffeee;" GridPane.columnIndex="2" />
+            <Button fx:id="button4" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="145.0" prefWidth="155.0" style="-fx-background-color: #fffeee; -fx-border-color: #000; -fx-border-width: 0 2px 0 0;" GridPane.rowIndex="1" />
+            <Button fx:id="button5" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="169.0" prefWidth="163.0" style="-fx-background-color: #fffeee;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button6" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="158.0" prefWidth="145.0" style="-fx-background-color: #fffeee; -fx-border-color: #000; -fx-border-width: 0 0 0 2px;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="button7" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="157.0" prefWidth="203.0" style="-fx-border-color: #000; -fx-border-width: 2px 2px 0 0; -fx-background-color: #fffeee;" GridPane.rowIndex="2" />
+            <Button fx:id="button8" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="154.0" prefWidth="145.0" style="-fx-background-color: #fffeee; -fx-border-color: #000; -fx-border-width: 2px 0 0;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="button9" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="167.0" prefWidth="163.0" style="-fx-border-color: #000; -fx-border-width: 2px 0 0 2px; -fx-background-color: #fffeee;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </center>

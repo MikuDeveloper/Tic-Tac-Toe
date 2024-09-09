@@ -36,7 +36,7 @@ public class IA {
         for (int i = 0; i < board.length; i++) {
             if (board[i] == 0) {
                 board[i] = 1;
-                int moveVal = minimax(board, 0, true); // Change to TRUE.
+                int moveVal = minimax(board, 0, false);
                 board[i] = 0;
                 if (moveVal > bestVal) {
                     bestMove = i;

@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -28,6 +29,8 @@ public class TicTacToeController implements Initializable {
     Stage stage;
     @FXML
     BorderPane mainPane;
+    @FXML
+    HBox bottomPane;
     @FXML
     Label difficultyLabel;
     @FXML
@@ -81,15 +84,19 @@ public class TicTacToeController implements Initializable {
     private void setDifficulty(char difficulty) {
         switch (difficulty) {
             case 'F':
+                difficultyLabel.setStyle("-fx-background-color: #00FF0030");
                 difficultyLabel.setText("Dificultad: Fácil");
+                System.out.println("NICE");
                 this.difficulty = 'F';
                 break;
             case 'M':
+                difficultyLabel.setStyle("-fx-background-color: #DDDD1530");
                 difficultyLabel.setText("Dificultad: Medio");
                 this.difficulty = 'M';
                 break;
             case 'D':
                 difficultyLabel.setText("Dificultad: Difícil");
+                difficultyLabel.setStyle("-fx-background-color: #FF000030");
                 this.difficulty = 'D';
             break;
         }
@@ -144,7 +151,7 @@ public class TicTacToeController implements Initializable {
                 }
                 break;
             case 'M':
-                if (oMoves == 1 || oMoves == 2) {
+                if (oMoves == 2 || oMoves == 3) {
                     think();
                 } else {
                     pressRandomButton();
@@ -182,6 +189,7 @@ public class TicTacToeController implements Initializable {
         //Horizontal
         if (idBtnGraphic1.startsWith("X") && idBtnGraphic2.startsWith("X") && idBtnGraphic3.startsWith("X")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(crossImage);
             increaseCrossCounter();
             gameState = 'F';
@@ -189,6 +197,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic4.startsWith("X") && idBtnGraphic5.startsWith("X") && idBtnGraphic6.startsWith("X")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(crossImage);
             increaseCrossCounter();
             gameState = 'F';
@@ -196,6 +205,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic7.startsWith("X") && idBtnGraphic8.startsWith("X") && idBtnGraphic9.startsWith("X")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(crossImage);
             increaseCrossCounter();
             gameState = 'F';
@@ -204,6 +214,7 @@ public class TicTacToeController implements Initializable {
         //Vertical
         if (idBtnGraphic1.startsWith("X") && idBtnGraphic4.startsWith("X") && idBtnGraphic7.startsWith("X")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(crossImage);
             increaseCrossCounter();
             gameState = 'F';
@@ -211,6 +222,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic2.startsWith("X") && idBtnGraphic5.startsWith("X") && idBtnGraphic8.startsWith("X")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(crossImage);
             increaseCrossCounter();
             gameState = 'F';
@@ -218,6 +230,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic3.startsWith("X") && idBtnGraphic6.startsWith("X") && idBtnGraphic9.startsWith("X")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(crossImage);
             increaseCrossCounter();
             gameState = 'F';
@@ -226,6 +239,7 @@ public class TicTacToeController implements Initializable {
         //Diagonal
         if (idBtnGraphic1.startsWith("X") && idBtnGraphic5.startsWith("X") && idBtnGraphic9.startsWith("X")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(crossImage);
             increaseCrossCounter();
             gameState = 'F';
@@ -233,6 +247,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic3.startsWith("X") && idBtnGraphic5.startsWith("X") && idBtnGraphic7.startsWith("X")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(crossImage);
             increaseCrossCounter();
             gameState = 'F';
@@ -243,6 +258,7 @@ public class TicTacToeController implements Initializable {
         //Horizontal
         if (idBtnGraphic1.startsWith("O") && idBtnGraphic2.startsWith("O") && idBtnGraphic3.startsWith("O")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(circleImage);
             increaseCircleCounter();
             gameState = 'F';
@@ -250,6 +266,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic4.startsWith("O") && idBtnGraphic5.startsWith("O") && idBtnGraphic6.startsWith("O")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(circleImage);
             increaseCircleCounter();
             gameState = 'F';
@@ -257,6 +274,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic7.startsWith("O") && idBtnGraphic8.startsWith("O") && idBtnGraphic9.startsWith("O")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(circleImage);
             increaseCircleCounter();
             gameState = 'F';
@@ -265,6 +283,7 @@ public class TicTacToeController implements Initializable {
         //Vertical
         if (idBtnGraphic1.startsWith("O") && idBtnGraphic4.startsWith("O") && idBtnGraphic7.startsWith("O")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(circleImage);
             increaseCircleCounter();
             gameState = 'F';
@@ -272,6 +291,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic2.startsWith("O") && idBtnGraphic5.startsWith("O") && idBtnGraphic8.startsWith("O")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(circleImage);
             increaseCircleCounter();
             gameState = 'F';
@@ -279,6 +299,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic3.startsWith("O") && idBtnGraphic6.startsWith("O") && idBtnGraphic9.startsWith("O")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(circleImage);
             increaseCircleCounter();
             gameState = 'F';
@@ -287,6 +308,7 @@ public class TicTacToeController implements Initializable {
         //Diagonal
         if (idBtnGraphic1.startsWith("O") && idBtnGraphic5.startsWith("O") && idBtnGraphic9.startsWith("O")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(circleImage);
             increaseCircleCounter();
             gameState = 'F';
@@ -294,6 +316,7 @@ public class TicTacToeController implements Initializable {
         }
         if (idBtnGraphic3.startsWith("O") && idBtnGraphic5.startsWith("O") && idBtnGraphic7.startsWith("O")) {
             turnText.setText("Ganador:");
+            paintWinner();
             currentTurn.setImage(circleImage);
             increaseCircleCounter();
             gameState = 'F';
@@ -304,6 +327,7 @@ public class TicTacToeController implements Initializable {
                 && !idBtnGraphic4.equals("NA") && !idBtnGraphic5.equals("NA") && !idBtnGraphic6.equals("NA")
                 && !idBtnGraphic7.equals("NA") && !idBtnGraphic8.equals("NA") && !idBtnGraphic9.equals("NA")) {
             turnText.setText("Empate");
+            bottomPane.setStyle("-fx-background-color: #EEEEEE25");
             increaseDrawCounter();
             currentTurn.setImage(drawImage);
             gameState = 'F';
@@ -323,6 +347,7 @@ public class TicTacToeController implements Initializable {
     @FXML
     private void newGame() {
         gameState = 'N';
+        repaintBottomPane();
         button1.setGraphic(null);
         button2.setGraphic(null);
         button3.setGraphic(null);
@@ -426,8 +451,8 @@ public class TicTacToeController implements Initializable {
                 idBtnGraphic9.startsWith("X") ? 1 : idBtnGraphic9.startsWith("O") ? -1 : 0,
         };
 
-        IA ia = new IA();
-        int best = ia.findBestMove(board) + 1;
+        IA2 ia = new IA2(board);
+        int best = ia.best() + 1;
 
         switch (best) {
             case 1: button1.fire(); break;
@@ -440,5 +465,34 @@ public class TicTacToeController implements Initializable {
             case 8: button8.fire(); break;
             case 9: button9.fire(); break;
         }
+    }
+
+    private void paintWinner() {
+        bottomPane.setStyle("-fx-background-color: #00FF0025");
+    }
+
+    private void repaintBottomPane() {
+        bottomPane.setStyle("-fx-background-color: #FFFFFF");
+    }
+
+    @FXML
+    private void showInformation() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Tic Tac Toe");
+        alert.setHeaderText("Datos de aplicación");
+        alert.setContentText("-Versión 1.0.0\n\t-Librerías:\n-Versión de Java: 21.0.4\n-Versión de Maven: 3.13.0");
+        alert.showAndWait();
+    }
+    @FXML
+    private void showDevelopmentTeam() {
+        String developer1 = "- Jose Miguel Paniagua Tinajero";
+        String developer2 = "- Julio César Flores Mondragón";
+        String developer3 = "- Brandon Alexis Solís Barrera";
+        String developer4 = "- Jorge Martínez Hernández";
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Tic Tac Toe");
+        alert.setHeaderText("Equipo de desarrollo");
+        alert.setContentText(String.format("%s\n%s\n%s\n%s", developer1, developer2, developer3, developer4));
+        alert.showAndWait();
     }
 }

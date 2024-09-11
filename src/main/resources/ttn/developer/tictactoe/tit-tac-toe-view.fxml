@@ -30,15 +30,15 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="button1" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="151.0" prefWidth="167.0" style="-fx-border-color: #000; -fx-border-width: 0 2px 2px 0; -fx-background-color: #fffeee;" />
-            <Button fx:id="button2" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="173.0" prefWidth="160.0" style="-fx-background-color: #fffeee; -fx-border-color: #000; -fx-border-width: 0 0 2px;" GridPane.columnIndex="1" />
-            <Button fx:id="button3" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="155.0" prefWidth="141.0" style="-fx-border-color: #000; -fx-border-width: 0 0 2px 2px; -fx-background-color: #fffeee;" GridPane.columnIndex="2" />
-            <Button fx:id="button4" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="145.0" prefWidth="155.0" style="-fx-background-color: #fffeee; -fx-border-color: #000; -fx-border-width: 0 2px 0 0;" GridPane.rowIndex="1" />
-            <Button fx:id="button5" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="169.0" prefWidth="163.0" style="-fx-background-color: #fffeee;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="button6" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="158.0" prefWidth="145.0" style="-fx-background-color: #fffeee; -fx-border-color: #000; -fx-border-width: 0 0 0 2px;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="button7" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="157.0" prefWidth="203.0" style="-fx-border-color: #000; -fx-border-width: 2px 2px 0 0; -fx-background-color: #fffeee;" GridPane.rowIndex="2" />
-            <Button fx:id="button8" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="154.0" prefWidth="145.0" style="-fx-background-color: #fffeee; -fx-border-color: #000; -fx-border-width: 2px 0 0;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="button9" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="167.0" prefWidth="163.0" style="-fx-border-color: #000; -fx-border-width: 2px 0 0 2px; -fx-background-color: #fffeee;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="button1" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="151.0" prefWidth="167.0" style="-fx-border-color: #009999; -fx-border-width: 0 10px 10px 0; -fx-background-color: #fff;" />
+            <Button fx:id="button2" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="173.0" prefWidth="160.0" style="-fx-background-color: #fff; -fx-border-color: #009999; -fx-border-width: 0 0 10px;" GridPane.columnIndex="1" />
+            <Button fx:id="button3" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="155.0" prefWidth="141.0" style="-fx-border-color: #009999; -fx-border-width: 0 0 10px 10px; -fx-background-color: #fff;" GridPane.columnIndex="2" />
+            <Button fx:id="button4" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="145.0" prefWidth="155.0" style="-fx-background-color: #fff; -fx-border-color: #009999; -fx-border-width: 0 10px 0 0;" GridPane.rowIndex="1" />
+            <Button fx:id="button5" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="169.0" prefWidth="163.0" style="-fx-background-color: #fff;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button6" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="158.0" prefWidth="145.0" style="-fx-background-color: #fff; -fx-border-color: #009999; -fx-border-width: 0 0 0 10px;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="button7" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="157.0" prefWidth="203.0" style="-fx-border-color: #009999; -fx-border-width: 10px 10px 0 0; -fx-background-color: #fff;" GridPane.rowIndex="2" />
+            <Button fx:id="button8" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="154.0" prefWidth="145.0" style="-fx-background-color: #fff; -fx-border-color: #009999; -fx-border-width: 10px 0 0;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="button9" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onActionButton" prefHeight="167.0" prefWidth="163.0" style="-fx-border-color: #009999; -fx-border-width: 10px 0 0 10px; -fx-background-color: #fff;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </center>
@@ -86,13 +86,22 @@
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Acerca de">
-                     <accelerator>
-                        <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showDevelopmentTeam" text="Desarrolladores">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="F1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#showInformation" text="Versión">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="F2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                     </items>
                 </Menu>
               </menus>
             </MenuBar>
-            <Label fx:id="difficultyLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="600.0" text="Dificultad:">
+            <Label fx:id="difficultyLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: #fff;" text="Dificultad:">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
@@ -101,7 +110,7 @@
       </VBox>
    </top>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox fx:id="bottomPane" alignment="CENTER" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
             <Label fx:id="turnText" text="Turno de:">
                <HBox.margin>
@@ -113,10 +122,13 @@
             </Label>
             <ImageView fx:id="currentTurn" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
          </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
       </HBox>
    </bottom>
    <left>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fx:id="crossCounterImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="crossCounter" text="Label">
@@ -140,7 +152,7 @@
       </VBox>
    </left>
    <right>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fx:id="drawCounterImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="drawCounter" text="Label">
